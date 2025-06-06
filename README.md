@@ -49,7 +49,7 @@ To enhance model interpretability, I used SHAP (SHapley Additive exPlanations) t
 - **SHAP Waterfall Plots** show feature contributions for individual predictions.
 
 #### 🔹 XGBoost SHAP Summary  
-![XGBoost SHAP Summary](images/XGBoost_shap_summary.png)
+![XGBoost SHAP Summary](notebooks/XGBoost_shap_summary.png)
 
 #### 🔹 XGBoost SHAP Waterfall (Sample)  
 ![XGBoost SHAP Waterfall](XGBoost_shap_waterfall.png)
