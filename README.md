@@ -52,19 +52,19 @@ To enhance model interpretability, I used SHAP (SHapley Additive exPlanations) t
 ![XGBoost SHAP Summary](notebooks/XGBoost_shap_summary.png)
 
 #### 🔹 XGBoost SHAP Waterfall (Sample)  
-![XGBoost SHAP Waterfall](XGBoost_shap_waterfall.png)
+![XGBoost SHAP Waterfall](notebooks/XGBoost_shap_waterfall.png)
 
 #### 🔹 Lasso SHAP Summary  
-![Lasso SHAP Summary](Lasso_shap_summary.png)
+![Lasso SHAP Summary](notebooks/Lasso_shap_summary.png)
 
 #### 🔹 Lasso SHAP Waterfall (Sample)  
-![Lasso SHAP Waterfall](Lasso_shap_waterfall.png)
+![Lasso SHAP Waterfall](notebooks/Lasso_shap_waterfall.png)
 
 #### 🔹 Ridge SHAP Summary  
-![Ridge SHAP Summary](Ridge_shap_summary.png)
+![Ridge SHAP Summary](notebooks/Ridge_shap_summary.png)
 
 #### 🔹 Ridge SHAP Waterfall (Sample)  
-![Ridge SHAP Waterfall](Ridge_shap_waterfall.png)
+![Ridge SHAP Waterfall](notebooks/Ridge_shap_waterfall.png)
 
 ---
 
