@@ -1,49 +1,74 @@
-# 🏠 Ames Housing Price Prediction
+🏠 **Ames Housing Price Prediction (Kaggle Competition – Top 8.5%)**
 
-A regression project using machine learning to predict housing prices based on the Ames Housing dataset.
+A regression modeling project based on the Kaggle “House Prices: Advanced Regression Techniques” competition.
 
-Achieved a **Kaggle score of 0.12655**, ranked **#405 out of 4781 (top ~8.5%)** under the Kaggle username **Hui**.
+Achieved a Kaggle score of **0.12655**, ranking **#405 out of 4,781** submissions (Top ~8.5%) under the Kaggle username **Hui**.
 
 ---
 
-## 📦 Project Overview
+📦 **Project Overview**
 
-This notebook-based project walks through the full pipeline of:
+This notebook-based project walks through a complete regression modeling pipeline:
 
 - Exploratory Data Analysis (EDA)
-- Data cleaning and imputation
-- Feature engineering and log transformation
-- Modeling using Ridge, Lasso, XGBoost, LightGBM
-- Model blending with weighted ensembling
-- Generating Kaggle submission file
+- Data cleaning and missing value imputation
+- Feature engineering (log transformation, one-hot encoding)
+- Modeling with Ridge, Lasso, XGBoost, and LightGBM
+- Ensemble blending with weighted averaging
+- Generating and submitting Kaggle predictions
 
 ---
 
-## ⚙️ Tools & Techniques
+⚙️ **Tools & Techniques**
 
-- Python, Pandas, NumPy  
-- Scikit-learn (Ridge, Lasso)  
-- XGBoost & LightGBM  
+- Python, pandas, NumPy  
+- scikit-learn (Ridge, Lasso)  
+- XGBoost, LightGBM  
 - Cross-validation with RMSE scoring  
-- One-hot encoding and log1p transformation  
-- SHAP (optional for model explainability)
+- SHAP for post-hoc model explainability  
+- Jupyter Notebook
 
 ---
 
-## 📊 Model Performance
+📊 **Model Performance (Cross-Validated RMSE)**
 
-| Model    | CV RMSE  |
-|----------|----------|
-| Ridge    | 0.12710  |
-| Lasso    | 0.12655  |
-| XGBoost  | 0.12836  |
-| Ensemble | ~0.126XX |
+| Model     | CV RMSE   |
+|-----------|-----------|
+| Ridge     | 0.12710   |
+| Lasso     | 0.12655   |
+| XGBoost   | 0.12836   |
+| Ensemble  | ~0.126xx  |
 
 ---
 
-## 📁 Directory Structure
+🧠 **Model Explainability (SHAP Analysis)**
 
-```
+To enhance model interpretability, I used SHAP (SHapley Additive exPlanations) to explain predictions for Ridge, Lasso, and XGBoost models.
+
+- **SHAP Summary Plots** visualize how each feature impacts predictions across the dataset.
+- **SHAP Waterfall Plots** show feature contributions for individual predictions.
+
+#### 🔹 XGBoost SHAP Summary  
+![XGBoost SHAP Summary](notebooks/XGBoost_shap_summary.png)
+
+#### 🔹 XGBoost SHAP Waterfall (Sample)  
+![XGBoost SHAP Waterfall](notebooks/XGBoost_shap_waterfall.png)
+
+#### 🔹 Lasso SHAP Summary  
+![Lasso SHAP Summary](notebooks/Lasso_shap_summary.png)
+
+#### 🔹 Lasso SHAP Waterfall (Sample)  
+![Lasso SHAP Waterfall](notebooks/Lasso_shap_waterfall.png)
+
+#### 🔹 Ridge SHAP Summary  
+![Ridge SHAP Summary](notebooks/Ridge_shap_summary.png)
+
+#### 🔹 Ridge SHAP Waterfall (Sample)  
+![Ridge SHAP Waterfall](notebooks/Ridge_shap_waterfall.png)
+
+---
+
+📁 **Directory Structure**
 .
 ├── 1_eda.ipynb
 ├── 2_data_cleaning&feature_engineering.ipynb
@@ -51,35 +76,26 @@ This notebook-based project walks through the full pipeline of:
 ├── 4_lasso.ipynb
 ├── 5_xgboost.ipynb
 ├── 6_ensemble.ipynb
+├── 5_shap_explainability.ipynb
 ├── X_train_cleaned.csv
 ├── X_test_cleaned.csv
 ├── y_train.csv
 └── ridge_submission.csv
-```
 
 ---
+📄 **Sample Submission Format**
 
-## 📄 Submission Example
-
-```csv
 Id,SalePrice
 1461,208500.0
 1462,181500.0
 ...
-```
 
 ---
 
-## 🙋‍♀️ Author
+🙋‍♀️ **Author**
 
 **Hui Wang**  
-Undergraduate, University of Utah  
+Undergraduate @ University of Utah  
 Major: Mathematics (Statistics Emphasis)  
-Target: Data Analyst / Data Scientist Internship  
+Target Role: Data Analyst / Data Scientist Internship
 
----
-
-## 🌐 More
-
-This project is part of my data science portfolio for internship applications.  
-Feel free to check out more projects on [my GitHub](https://github.com/) or contact me for collaboration.
